@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pericles Delivery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;700&display=swap" rel="stylesheet">
+
+    <script>
+       function redirect(resposta){
+        if(resposta=='SIM'){
+            window.location.href = "page1.html?resposta=SIM"
+        } else {
+            window.location.href = "page2.html?resposta=NAO"
+        }
+       }
+    </script>
+</head>
+<body>
+    <main>
+        <h1>Bem-vindo à <br> Cervejaria do Pericles Delivery</h1>
+        <div>
+            <img src="assets/cerveja.svg" alt="Cervejaria">
+            <h4>Você é maior de 18 anos?</h4>
+
+            <button onclick="redirect('SIM')">SIM</button>
+
+            <button onclick="redirect('NAO')">NÃO</button>
+        </div>
+    </main>
+</body>
+</html>
